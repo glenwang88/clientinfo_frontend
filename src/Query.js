@@ -49,8 +49,7 @@ class Query extends React.Component {
                                      "expire_check=" + this.state.expire_check;
                               
         fetch(queryString, {
-            method: 'GET',
-            headers: {'Content-Type': 'application/json'}
+            method: 'GET'
         })
         .then( (response) => {
                     return response.json()    
